@@ -221,7 +221,7 @@ public class DresdenScenario extends MATSimApplication {
 				}
 			}
 
-			//close down carola bridge approach 1
+			//close down carola bridge
 			Link carolaBridge1 = scenario.getNetwork().getLinks().get(Id.createLinkId("901959078"));
 			Link carolaBridge2 = scenario.getNetwork().getLinks().get(Id.createLinkId("4214231"));
 
