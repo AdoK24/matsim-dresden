@@ -9,7 +9,7 @@ import org.matsim.core.scenario.ScenarioUtils;
 public class PopulationModifier {
 	public static void main(String[] args) {
 		Config config = ConfigUtils.loadConfig("input/v1.0/dresden-v1.0-10pct.config.xml");
-		Scenario scenario = ScenarioUtils.createScenario(config);
+		Scenario scenario = ScenarioUtils.loadScenario(config);
 
 		Population population = scenario.getPopulation();
 		for (Person person : scenario.getPopulation().getPersons().values()) {
