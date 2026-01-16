@@ -220,13 +220,6 @@ public class DresdenScenario extends MATSimApplication {
 					NetworkUtils.removeDisallowedNextLinks(link);
 				}
 			}
-
-			//close down carola bridge
-			Link carolaBridge1 = scenario.getNetwork().getLinks().get(Id.createLinkId("901959078"));
-			Link carolaBridge2 = scenario.getNetwork().getLinks().get(Id.createLinkId("4214231"));
-
-			carolaBridge1.setFreespeed(0.000001);
-			carolaBridge2.setFreespeed(0.000001);
 		}
 
 		if (emissions == FunctionalityHandling.ENABLED) {
